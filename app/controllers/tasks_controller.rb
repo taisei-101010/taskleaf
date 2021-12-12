@@ -8,6 +8,7 @@ class TasksController < ApplicationController
   end
 
   def new
+    @task = Task.new
   end
 
   def edit
@@ -24,10 +25,6 @@ class TasksController < ApplicationController
     task = Task.find(params[:id])
     task.destroy
     redirect_to tasks_url, notice: "タスク「#{task.name}」を削除しました。"
-  end
-
-  def new
-    @task = Task.new
   end
 
   def create
