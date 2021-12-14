@@ -71,3 +71,7 @@ gem 'bootstrap', '~> 4.6'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'rails_autolink'
+
+gem 'rspec-rails', '~> 3.7'
+
+gem 'factory_bot_rails', '~> 4.11'
